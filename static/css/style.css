@@ -1,0 +1,88 @@
+@import url('fonts.css');
+
+body { 
+    padding: 50px;
+    max-width: 1000px;
+    margin:0 auto; 
+    font-family: "OpenSans-Regular";
+}
+
+h1 {
+    font-size: 75px;
+}
+
+
+
+a, a:visited {
+    color: blue;
+    text-decoration: none;
+
+}
+
+#nameLink {
+    font-size: large;
+    padding-right: 710px;
+}
+
+#title {
+    font-size: 100px;
+}
+
+#jsEmojis {
+    letter-spacing: -16px;
+    display: inline-block;
+}
+
+#devStatement {
+    display: inline-block;
+}
+
+
+#devDiv {
+    display: inline-block;
+    font-size: 50px; 
+}
+
+.footerDiv {
+    padding-top: 25px; 
+    font-family: "UbuntuMono-Regular";
+    text-align: center;
+}
+
+.headerDiv {
+    text-align: center;
+}
+
+.shortBio {
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.indexDiv {
+    display: inline-block;
+}
+
+.projectDiv {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 200px;
+}
+
+
+.Card {
+    width: 250px;
+    height: 200px;
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+  }
+  
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  
