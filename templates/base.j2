@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title>Ayub Farah - Developer {% block title %} {% endblock %} </title>
+	{% block head %}
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Ayub Farah - Developer</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	{% endblock %}
 </head>
 <body>
-
+	{% block navbar %}
 	<div class='headerBar'>
 
 			<a id='nameLink' href="/">Ayub Farah</a>  <a href="/about">About </a> - <a href="/projects"> Projects</a>
 
 	</div>
+	{% endblock %}
+
+	{% block content %}
+
+	{% endblock %}
+
+	{% block footer %}
+	<div class='footerDiv'>
+		<p>Designed and built by Ayub Farah, 2021</p>
+		<p>Made with Flask</p>
+		<div>
+			<a href="https://github.com/ayubf">Github</a>
+		</div>
+	</div>
+	{% endblock %}
+
 
 </body>
 </html>

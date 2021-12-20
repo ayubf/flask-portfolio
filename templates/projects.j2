@@ -1,22 +1,16 @@
-<div class='indexDiv'>
+{% extends "base.j2" %}
 
-	<div> 
-		<h1 id='title'>Hi, I'm Ayub 👋 </h1>
-		<h3 id='devDiv' >  I'm a developer 🐍☕</h3>
-	</div>
 
-	<div class='shortBio'>
-		<p>
-			I love to solve problems and enjoy learning new things every day. I spend hours daily learning, practicing and surpassing my limits, pushing ahead and polishing my skills.
-		</p>
-	</div>
 
+{% block title %} | Projects {% endblock %}
+
+
+{% block content %}
+<div>
+	<h1>Projects</h1>
 	<div>
-		
-		<h2>Check out some of my projects</h2>
 
 		<div class='projectDiv'>
-
 			<div class="card">
 				<img src="../static/images/2Do.png" alt="Avatar" height="200px" style="width:100%">
 				<div class="container">
@@ -52,13 +46,5 @@
 		</div>
 
 	</div>
-
-	<div class='contactDiv'>
-		<h2>Contact me</h2>
-		<p>
-			Don't hesitate to contact me if you want to discuss programming, <br> Python libraries, fiction novels, or have any offers, advice or critique.
-		</p>
-		<a href='mailto:ayubaf04@gmail.com'>ayubaf04@gmail.com</a>
-	</div>
-
 </div>
+{% endblock %}

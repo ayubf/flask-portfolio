@@ -7,12 +7,12 @@ views = Blueprint(__name__, "views")
 
 @views.route("/")
 def home():
-	return str(render_template("header.html")+render_template("index.html")+render_template("footer.html"))
+	return render_template("index.j2")
 
 @views.route("/about")
 def about():
-	return str(render_template("header.html")+render_template("about.html")+render_template("footer.html"))
+	return render_template("about.j2")
 
 @views.route("/projects")
 def projects():
-	return str(render_template("header.html")+render_template("projects.html")+render_template("footer.html"))
+	return render_template("projects.j2")
