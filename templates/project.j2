@@ -1,0 +1,22 @@
+{% extends "base.j2" %}
+
+
+{% block title %} | {{data['title']}} {% endblock %}
+
+
+{%block content%}
+    <div class='projectPageDiv  '>
+        <div class='card'>
+            <h2>{{data['title']}} : {{data['miniText']}}</h2>
+            <div class='container'>
+                
+                <h3>
+                    {{data['technologies']}}
+                </h3>
+                <a href="https://github.com/ayubf/{{data['titleURL']}}">Github</a>
+            </div>
+        </div>
+        <img src="../static/images/{{data['titleURL']}}.png" alt="Avatar" height="200px" style="width:200px">
+    </div>
+     
+{%endblock%}

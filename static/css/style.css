@@ -28,10 +28,7 @@ a, a:visited {
     font-size: 100px;
 }
 
-#jsEmojis {
-    letter-spacing: -16px;
-    display: inline-block;
-}
+
 
 #devStatement {
     display: inline-block;
@@ -65,9 +62,26 @@ a, a:visited {
 .projectDiv {
     display: flex;
     flex-direction: row;
-    padding-bottom: 200px;
+    flex-wrap: wrap; 
+    padding-bottom: 75px;
+    width: 1000px;
 }
 
+.projectPageDiv {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.postDiv {
+    max-width: 300px;
+    border-radius: 3px;
+    padding: 10px;
+    outline-style: solid;
+    outline-width: 0.5px;
+
+}
 
 .Card {
     width: 250px;
@@ -75,9 +89,10 @@ a, a:visited {
 }
 
 .card {
-    width: 250px;
+    width: 300px;
     height: 200px;
-    padding: 10px;
+    padding-right: 100px;
+    padding-bottom: 150px;
   }
   
   
@@ -85,4 +100,3 @@ a, a:visited {
   .container {
     padding: 2px 16px;
   }
-  

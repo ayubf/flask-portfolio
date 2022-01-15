@@ -6,8 +6,13 @@
 <div class='indexDiv'>
 
 	<div> 
-		<h1 id='title'>Hi, I'm Ayub 👋 </h1>
-		<h3 id='devDiv' >  I'm a developer 🐍☕</h3>
+		<h1 id='title'>Hi, I'm Ayub </h1>
+		<h3 id='devDiv' >  I'm a developer </h3>
+		<div>
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="64" width="64"/>
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="64" width="64"/>
+				<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="64" width="64"/>
+		</div>
 	</div>
 
 	<div class='shortBio'>
@@ -20,43 +25,36 @@
 		
 		<h2>Check out some of my projects</h2>
 
+
+
 		<div class='projectDiv'>
-
-			<div class="card">
-				<img src="../static/images/2Do.png" alt="Avatar" height="200px" style="width:100%">
-				<div class="container">
-					<p><b>2Do</b>: To-do List Maker</p>
-					<p>
-						Made with ElectronJS, Javascript
-					</p>
-					<a href="https://github.com/ayubf/2Do">Learn more...</a>
+			{%for proj in data['projectData']%}
+				<div class="card">
+					<img src="../static/images/{{proj['titleURL']}}.png" alt="Avatar" height="200px" style="width:100%">
+					<div class="container">
+						<p><b>{{proj['title']}}</b>:  {{proj['miniText']}} </p>
+						<p>
+							{{proj['technologies']}}
+						</p>
+						<a href="https://github.com/ayubf/{{proj['titleURL']}}">Learn more...</a>
+					</div>
 				</div>
-			</div>
-
-			<div class="card">
-				<img src="../static/images/rngtool.png" alt="Avatar" height="200px" style="width:100%">
-				<div class="container">
-					<p><b>rngtool</b>: Random Number Generation Tool</p>
-					<p>
-						Made with Python
-					</p>
-					<a href="https://github.com/ayubf/rngtool">Learn more...</a>
-				</div>
-			</div>
-
-			<div class="card">
-				<img src="../static/images/wordwide.png" alt="Avatar" height="200px" style="width:100%">
-				<div class="container">
-					<p><b>wordwide</b>: Command-line dictionary tool</p>
-					<p>
-						Made with Python
-					</p>
-					<a href="https://github.com/ayubf/wordwide">Learn more...</a>
-				</div>
-			</div>
+			{%endfor%}
 		</div>
 
 	</div>
+
+	<div>
+		<h2>Some of my recent posts</h2>
+		{% for post in data['postData']%} 
+				<div class='postDiv'>
+					<a href="http://localhost:5000/posts/{{post['titleURL']}}"> {{post['title']}} </a>
+					<p> {{post['body'][:30]}} </p>
+					<p> Date: {{post['date']}} </p>
+					<p> Views: {{post['views']}}  </p>
+				</div>
+		{% endfor %}
+	<div>
 
 	<div class='contactDiv'>
 		<h2>Contact me</h2>
