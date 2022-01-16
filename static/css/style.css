@@ -75,12 +75,11 @@ a, a:visited {
 
 
 .postDiv {
-    max-width: 300px;
-    border-radius: 3px;
+    max-width: 500px;
+    border-radius: 10px;
     padding: 10px;
-    outline-style: solid;
-    outline-width: 0.5px;
-
+    border: 2px outset aliceblue;
+    
 }
 
 .Card {
