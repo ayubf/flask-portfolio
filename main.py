@@ -6,7 +6,7 @@ from models.Projects import Projects
 main = Blueprint(__name__, "main")
 
 
-@main.route("/")
+@main.route("/", methods=['GET'])
 def home():
 	postData = Posts.objects.order_by('-id')[:4]
 	projectData = Projects.objects.order_by('-id')[:4]
@@ -16,7 +16,7 @@ def home():
 		"projectData": projectData
 	})
 
-@main.route("/about")
+@main.route("/about", methods=['GET'])
 def about():
 	return render_template("about.j2")
 
