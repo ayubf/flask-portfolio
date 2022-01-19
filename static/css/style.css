@@ -85,6 +85,7 @@ a, a:visited {
 .Card {
     width: 250px;
     height: 200px;
+    padding: 20px;
 }
 
 .card {
